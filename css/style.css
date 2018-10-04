@@ -1,0 +1,645 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: "Montserrat";
+    background-color: #dadada;
+}
+
+.invisLink {
+    position: relative;
+    z-index: 1;
+}
+
+.invisLink > a {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 7;
+    overflow: hidden;
+    text-indent: 200%;
+    white-space: nowrap;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    color: #1e1e1e;
+    letter-spacing: 0.1em;
+}
+
+button {
+    outline: none;
+    border: 0;
+    background: transparent;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #1e1e1e;
+    letter-spacing: 0.1em;
+}
+
+span {
+    font-size: 16px;
+    color: #1e1e1e;
+    letter-spacing: 0.1em;
+}
+
+p {
+    font-size: 16px;
+    color: #1e1e1e;
+    letter-spacing: 0.1em;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.cfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.banner {
+    background: url("../img/jpg/banner.jpg");
+    background-size: cover;
+    min-height: 800px;
+}
+
+.menu {
+    max-width: 700px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 25px;
+    text-align: center;
+}
+
+.menu li {
+    width: 110px;
+}
+
+.menu a {
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #ffffff;
+
+}
+
+.menu a:hover {
+    font-weight: 700;
+    color: #ffa200;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.logo {
+    height: 107px;
+    width: 130px !important;
+    margin-top: -25px;
+
+}
+.send:hover{
+    background-color: #ffb71d;
+}
+.logo img {
+    margin-top: 8px;
+}
+
+.logo a {
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.bannerInner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 85px;
+}
+
+.title {
+    margin-top: 115px;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 42px;
+    color: #ffa200;
+    line-height: 30px;
+}
+
+.title p {
+    color: #ffffff;
+    font-size: 24px;
+    letter-spacing: 0;
+}
+
+.enroll {
+    height: 357px;
+    width: 370px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background: rgba(107, 191, 17, 0.5);
+    text-align: center;
+}
+
+.enrollInner {
+    padding: 25px 35px;
+}
+
+.enrollInner > span {
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.enrollOrange {
+    color: #ffa200;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.enroll form {
+    margin-top: 30px;
+}
+
+.enroll input {
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    padding-left: 10px;
+    border: none;
+}
+
+.enroll input + input {
+    margin-top: 20px;
+}
+
+.enroll button {
+    margin-top: 40px;
+    background-color: #ffa200;
+    height: 50px;
+    width: 100%;
+}
+
+.enroll button span {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: Montserrat;
+}
+
+/*Services*/
+
+.servicesWrapper {
+    padding: 20px 30px 30px;
+    background-color: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin: -90px 0;
+    position: relative;
+}
+
+.services h2 {
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.servicesInner {
+    margin-top: 24px;
+}
+
+.servicesItem {
+    display: flex;
+}
+
+.servicesImage {
+    height: 370px;
+    width: 370px;
+    position: relative;
+    overflow: hidden;
+}
+
+.servicesImage:hover img {
+    transform: scale(1.1, 1.1);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.servicesItem:nth-child(1) img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    filter: url(../img/svg/filters_clean.svg#red);
+    -webkit-filter: url(../img/svg/filters_clean.svg#red);
+    -o-filter: url(../img/svg/filters_clean.svg#red);
+
+}
+
+.servicesItem:nth-child(2) img {
+    filter: url(../img/svg/filters_clean.svg#yellow);
+    -webkit-filter: url(../img/svg/filters_clean.svg#yellow);
+    -o-filter: url(../img/svg/filters_clean.svg#yellow);
+}
+
+.servicesItem:nth-child(3) img {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    filter: url(../img/svg/filters_clean.svg#green);
+    -webkit-filter: url(../img/svg/filters_clean.svg#green);
+    -o-filter: url(../img/svg/filters_clean.svg#green);
+}
+
+.servicesImage > span {
+    font-size: 38px;
+    font-weight: 300;
+    color: #ffffff;
+    text-transform: uppercase;
+    top: 68px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+}
+
+.category {
+    font-size: 180px;
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 172px;
+}
+
+.categoryInfo {
+    width: 66.6666%;
+    padding: 58px 0 0 33px;
+}
+
+.categoryInfoTitle {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.categoryInfoContent {
+    margin-top: 16px;
+}
+
+.categoryInfoContent p {
+    line-height: 24px;
+    letter-spacing: 0;
+}
+
+.categoryInfoContent p + p {
+    margin-top: 22px;
+}
+
+.more {
+    font-weight: 700;
+    color: #1e1e1e;
+    text-transform: uppercase;
+    float: right;
+    position: relative;
+    margin: 20px 17px 0 0;
+}
+
+.more:after {
+    content: '';
+    display: block;
+    height: 20px;
+    width: 11px;
+    background-image: url(../img/png/next.png);
+    position: absolute;
+    right: -20px;
+    top: 0;
+}
+
+/*Advantages*/
+.advantages {
+    background: url("../img/jpg/advantages.jpg") center no-repeat;
+    background-size: cover;
+    min-height: 366px;
+}
+
+.advantages h2 {
+    padding-top: 145px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 32px;
+}
+
+.advantagesInner span {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+.advantagesInner {
+    display: flex;
+    margin-top: 29px;
+    max-width: 1054px;
+    justify-content: space-between;
+}
+
+.advantagesInner li {
+    text-align: center;
+}
+
+.advantagesInner .advOrange {
+    color: #ffa200;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+/*Contacts*/
+.contacts {
+    background-color: #fff;
+    min-height: 500px;
+}
+
+.contactsInner {
+    padding-top: 25px;
+    display: flex;
+}
+
+.contactsLeft {
+    width: 52%;
+}
+
+.contactsLeft h2 {
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.address {
+    margin: 20px 0 0 25px;
+}
+
+.address > span {
+    position: relative;
+    letter-spacing: 0;
+}
+
+.address > span:before {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    content: '';
+    display: block;
+    left: -27px;
+    background: url("../img/png/place.png") center no-repeat;
+}
+
+.address div {
+    margin-top: 20px;
+    position: relative;
+}
+
+.address div:before {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    content: '';
+    left: -27px;
+    display: block;
+    background: url("../img/png/phone.png") center no-repeat;
+}
+
+.address div a {
+    display: block;
+    letter-spacing: 0;
+}
+
+.contactsLeft p {
+    margin-top: 12px;
+    letter-spacing: 0;
+    line-height: 24px;
+}
+
+.way {
+    margin-top: 25px;
+}
+
+.troll {
+    letter-spacing: 0;
+    line-height: 24px;
+}
+
+.wayTitle {
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    display: block;
+}
+
+.contactsLeft .more {
+    float: left;
+    margin-top: 40px;
+}
+
+/*Footer*/
+footer .logo {
+    margin: 0 auto;
+    text-align: center;
+    height: 130px;
+    padding-top: 24px;
+}
+
+footer {
+    min-height: 200px;
+    background-color: #262626;
+}
+
+footer p {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 17px;
+    letter-spacing: 0;
+    font-family: Roboto;
+}
+
+.createdBy {
+    text-decoration: underline;
+    color: #ffffff;
+    letter-spacing: 0;
+}
+
+#map {
+    width: 100%;
+}
+
+@media (max-width: 1076px) {
+    .title {
+        margin-top: 0px;
+    }
+
+    .bannerInner {
+        margin-top: 50px;
+    }
+
+    .enroll {
+        margin: 30px auto;
+    }
+
+    .contacts {
+        padding-bottom: 15px;
+    }
+    .categoryInfo{
+        padding: 0 0 0 33px;
+    }
+}
+@media (max-width: 767px) {
+    .categoryInfo {
+        padding: 0px 0 0 33px;
+    }
+
+    .categoryInfoContent p {
+        line-height: 21px;
+    }
+
+    .categoryInfoContent p + p {
+        margin-top: 10px;
+    }
+}
+@media (max-width: 479px) {
+    .menu li:not(.logo) {
+        display: none;
+    }
+
+    .logo {
+        margin: 0 auto;
+    }
+
+    .menu {
+        padding-top: 5px;
+    }
+
+    .title img {
+        width: calc(100vw - 30px);
+    }
+
+    h1 {
+        font-size: 31px;
+        line-height: 19px;
+    }
+
+    .bannerInner {
+        margin-top: 20px;
+    }
+
+    .servicesItem {
+        flex-direction: column;
+    }
+
+    .servicesImage {
+        height: 310px;
+        width: 100%;
+    }
+
+    .servicesImage > span {
+        top: 15%;
+    }
+
+    .categoryInfo {
+        padding: 8px 0 20px 0px;
+        width: 100%;
+    }
+
+    .categoryInfoContent p {
+        line-height: 19px;
+    }
+
+    .more {
+        margin: 5px 17px 0 0;
+    }
+
+    .advantages h2 {
+        padding-top: 120px;
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .advantagesInner {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 15px;
+    }
+
+    .advantagesInner span {
+        line-height: 22px;
+    }
+
+    .advantagesInner li + Li {
+        margin-top: 15px;
+    }
+
+    .contactsInner {
+        flex-direction: column;
+    }
+
+    .contactsLeft {
+        width: 100%;
+    }
+
+    .contacts .more {
+        margin-top: 20px;
+    }
+
+    #map {
+        height: 300px;
+        margin-top: 20px;
+    }
+}
+@media (max-width: 320px){
+    .enroll{
+        width: calc(100vw - 30px);
+    }
+    .servicesImage > span {
+        top: 15%;
+    }
+    .servicesImage {
+        height: 250px;
+        width: calc(100vw - 85px);
+    }
+    .servicesImage > span {
+        font-size: 26px;
+        top: 15px;
+    }
+
+    .category {
+        font-size: 153px;
+    }
+}
+
+
+
+

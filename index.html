@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Большая медвидица</title>
+    <meta name="viewport" content="wight=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCslM9SLN5nlXRKhBRp5G-XZKCoDXx7eI4&callback=initMap"
+            defer></script>
+    <script>
+        function initMap() {
+
+        }
+
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById('map'), {
+
+                zoom: 8,
+
+            });
+            var uluru = {lat: 52.1117112, lng: 23.7783839};
+            var map = new google.maps.Map(
+                document.getElementById('map'), {
+                    zoom: 17,
+                    center: uluru,
+                });
+        }
+    </script>
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+
+<div class="banner">
+    <div class="container">
+        <header>
+            <ul class="menu">
+                <li><a href="#">Главная</a></li>
+                <li><a  href="#services">Услуги</a></li>
+                <li class="logo invisLink"><a href="#"></a><img src="img/png/logo.png" alt=""><div><a href="#">Большая<br>медведица</a></div></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </header>
+        <div class="bannerInner">
+            <div class="title">
+                <h1>Автошкола</h1>
+                <img class="name" src="img/png/title.png">
+                <p>Nunc ligula nisi, efficitur sit amet quam et</p>
+            </div>
+            <div class="enroll">
+                <div class="enrollInner">
+                    <span><span class="enrollOrange"> Запишись</span><br>на обучение!</span>
+                    <form action="" method="post">
+                        <input type="text" placeholder="ваше имя" name="name" id="name_field">
+                        <input type="text" placeholder="ваш телефон" name="phone" id="phone_field">
+                        <button class="send" type="submit" value="Отправить"><span>Отправить</span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="services">
+    <a href="#" id="services"></a>
+    <div class="container">
+        <div class="servicesWrapper">
+            <h2>Наши услуги</h2>
+            <ul class="servicesInner">
+                <li class="servicesItem">
+                    <div class="servicesImage">
+                        <img src="img/jpg/car1.jpg" alt="">
+                        <span><span class="category">B</span><br>категория</span>
+                    </div>
+                    <div class="categoryInfo">
+                        <span class="categoryInfoTitle">Категория “B” подготовка</span>
+                        <div class="categoryInfoContent">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                nulla
+                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                deserunt mollit anim
+                            </p>
+                        </div>
+                        <a class="more" href="#">подробнее</a>
+                    </div>
+                </li>
+                <li class="servicesItem">
+                    <div class="servicesImage">
+                        <img src="img/jpg/car2.jpg" alt="">
+                        <span><span class="category">CE</span><br>категория</span>
+                    </div>
+                    <div class="categoryInfo">
+                        <span class="categoryInfoTitle">Категория “CE” подготовка</span>
+                        <div class="categoryInfoContent">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                nulla
+                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                deserunt mollit anim
+                            </p>
+                        </div>
+                        <a class="more" href="#">подробнее</a>
+                    </div>
+                </li>
+                <li class="servicesItem">
+                    <div class="servicesImage">
+                        <img src="img/jpg/car3.jpg" alt="">
+                        <span><span class="category">D</span><br>категория</span>
+                    </div>
+                    <div class="categoryInfo">
+                        <span class="categoryInfoTitle">Категория “D” подготовка</span>
+                        <div class="categoryInfoContent">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                nulla
+                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                deserunt mollit anim
+                            </p>
+                        </div>
+                        <a class="more" href="#">подробнее</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="advantages">
+    <a href="#" id="about"></a>
+    <div class="container">
+        <h2>Почему мы лучшие?</h2>
+        <ul class="advantagesInner">
+            <li><span><span class="advOrange">30 000</span><br>наших учеников<br>с правами</span></span></li>
+            <li><span><span class="advOrange">10</span><br>современных<br>автомобилей</span></span></li>
+            <li><span><span class="advOrange">8</span><br>опытных<br>инструкторов</span></span></li>
+        </ul>
+    </div>
+</div>
+<div class="contacts">
+    <a href="#" id="contacts"></a>
+    <div class="container">
+        <div class="contactsInner">
+            <div class="contactsLeft">
+
+                <h2>Контакты</h2>
+                <div class="address">
+                    <span>г. Брест, ул. Ленинградская, 41А</span>
+                    <div>
+                        <a href="tel:+375162503737">+375 (162) 50-37-37</a>
+                        <a href="tel:+375162525212">+375 (162) 52-52-12</a>
+                        <a href="tel:+375162500092">+375 (162) 50-00-92</a>
+                    </div>
+                </div>
+                <p>Наша школа расположена<br>
+                    на улице Ленинградской в микрорайоне<br>
+                    "Восток" напротив спорткомплекса "Виктория"<br>
+                    между зданием СШ N26 и магазином Гродно.
+                </p>
+                <div class="way">
+                    <span class="wayTitle">Вы можете проехать:</span>
+                    <span class="troll">
+                    троллейбусом 2, 3, 4<br>
+                    автобусом 18, 24, 31, 37, 38<br>
+                    маршрутным такси 1, 4, 9, 15, 18, 20, 35
+                </span>
+                </div>
+                <a class="more" href="#">Подробнее</a>
+            </div>
+            <div id="map"></div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="container">
+            <div class="logo invisLink">
+                <a href="#"></a>
+                <img src="img/png/logo.png" alt="">
+                <div><a href="#">Большая медведица</a></div>
+            </div>
+            <p>&#169; Автошкола “Большая медведица”. Все права защишены. | Digital studio <a class="createdBy"
+                                                                                      href="https://brain-it.by/ru/">BrainIT</a>
+            </p>
+        </div>
+</footer>
+</body>
+
+</html>
