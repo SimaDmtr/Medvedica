@@ -28,6 +28,7 @@
         }
     </script>
     <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/script.js"></script>
 </head>
 <body>
@@ -53,8 +54,8 @@
                 <div class="enrollInner">
                     <span><span class="enrollOrange"> Запишись</span><br>на обучение!</span>
                     <form action="" method="post">
-                        <input type="text" placeholder="ваше имя" name="name" id="name_field">
-                        <input type="text" placeholder="ваш телефон" name="phone" id="phone_field">
+                        <input type="text" placeholder="ваше имя" name="name" id="name_field" autocomplete="off">
+                        <input type="text" placeholder="ваш телефон" name="phone" id="phone_field" autocomplete="off">
                         <button class="send" type="submit" value="Отправить"><span>Отправить</span></button>
                     </form>
                 </div>
