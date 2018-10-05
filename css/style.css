@@ -79,7 +79,7 @@ ul {
 }
 
 .banner {
-    background: url("../img/jpg/banner.jpg");
+    background: url("../img/jpg/banner.jpg") center;
     background-size: cover;
     min-height: 800px;
 }
