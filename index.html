@@ -38,8 +38,10 @@
         <header>
             <ul class="menu">
                 <li><a href="#">Меню 1</a></li>
-                <li><a  href="#services">Меню 2</a></li>
-                <li class="logo invisLink"><a href="#"></a><img src="img/png/logo.png" alt=""><div><a href="#">Название<br>организации</a></div></li>
+                <li><a href="#services">Меню 2</a></li>
+                <li class="logo invisLink"><a href="#"></a><img src="img/png/logo.png" alt="">
+                    <div><a href="#">Название<br>организации</a></div>
+                </li>
                 <li><a href="#about">Меню 3</a></li>
                 <li><a href="#contacts">Меню 4</a></li>
             </ul>
@@ -53,9 +55,12 @@
             <div class="enroll">
                 <div class="enrollInner">
                     <span><span class="enrollOrange"> Запишись</span><br>на обучение!</span>
+
                     <form action="" method="post">
-                        <input type="text" placeholder="ваше имя" name="name" id="name_field" autocomplete="off">
-                        <input type="text" placeholder="ваш телефон" name="phone" id="phone_field" autocomplete="off">
+                        <input type="text" placeholder="ваше имя" max="100" name="name" id="name_field" required
+                               autocomplete="off">
+                        <input type="text" placeholder="ваш телефон" name="phone" id="phone_field" required
+                               autocomplete="off">
                         <button class="send" type="submit" value="Отправить"><span>Отправить</span></button>
                     </form>
                 </div>
@@ -181,15 +186,15 @@
 </div>
 <footer>
     <div class="container">
-            <div class="logo invisLink">
-                <a href="#"></a>
-                <img src="img/png/logo.png" alt="">
-                <div><a href="#">Название<br>организации</a></div>
-            </div>
-            <p>&#169; Автошкола “Большая медведица”. Все права защишены. | Digital studio <a class="createdBy"
-                                                                                      href="https://brain-it.by/ru/">BrainIT</a>
-            </p>
+        <div class="logo invisLink">
+            <a href="#"></a>
+            <img src="img/png/logo.png" alt="">
+            <div><a href="#">Название<br>организации</a></div>
         </div>
+        <p>&#169; Автошкола “Большая медведица”. Все права защишены. | Digital studio <a class="createdBy"
+                                                                                         href="https://brain-it.by/ru/">BrainIT</a>
+        </p>
+    </div>
 </footer>
 </body>
 

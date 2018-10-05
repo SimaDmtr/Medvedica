@@ -8,4 +8,5 @@ $(function(){
 });
 $(document).ready(function () {
     $('#phone_field').mask("+375(99)999-99-99", {autoclear : false});
+
 });
