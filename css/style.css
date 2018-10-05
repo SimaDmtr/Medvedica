@@ -101,7 +101,6 @@ ul {
     font-weight: 300;
     text-transform: uppercase;
     color: #ffffff;
-
 }
 
 .menu a:hover {
@@ -116,8 +115,9 @@ ul {
 
 .logo {
     height: 107px;
-    width: 130px !important;
+    width: auto !important;
     margin-top: -25px;
+    text-align: center;
 
 }
 .send:hover{
